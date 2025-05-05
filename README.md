@@ -11,4 +11,4 @@ Steps for using Weather App
 8.Tailwind CSS is used in this project for styling and the code can be found in output.css file inside src folder.
 
 Thank you,
-S Sreenivas
+S Sreenivas.
