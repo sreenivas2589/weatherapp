@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="Weatherapp" content="weather app with all details included" />
+    <meta name="keywords" content="weather,app,sunny,temperature,wind,speed,live weather,city,humidity" />
+    <!--Linking CSS Stylesheet-->
+    <link href="./output.css" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="Main_Icons/cloud-sky_3222807.png"/>
+    <!--linking google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+
+<body class="bg-[#0B1E35]">
+    <!--Header Class-->
+    <header class="flex flex-col flex-wrap items-center justify-center">
+        <h1 class="text-2xl text-white">Weather App </h1>
+        <a href="https://github.com/sreenivas2589/weatherapp" class="w-fit text-lg text-red-100" target="_blank">GitHub Link</a>
+    </header>
+
+    <!--Entire Weather app Section-->
+    <section class="flex flex-row flex-wrap items-center justify-center text-left">
+
+        <!--Search Section-->
+        <div class="border-2 flex h-[496px] w-[490.95px] flex-col gap-5 rounded-2xl border-solid bg-[url(backgrounds/sander-dewerte--jcP3xbN88w-unsplash.jpg)] bg-cover font-[raleway] text-white max-[376px]:w-[375px] max-[769px]:h-fit max-[361px]:w-[360px] max-[982px]:h-fit">
+
+            <!--section for searching location for weather data and getting location of the user-->
+            <h2 class="text-3xl">Weather Representation</h2>
+
+            <button id="location-btn" class="border-2 size-fit cursor-pointer border-solid bg-green-600 text-4xl font-extrabold text-white transition duration-300 ease-in-out hover:bg-cyan-500">Click here for location</button>
+            <div class="flex flex-row items-center justify-between">
+                <input type="text" id="city-search" name="city-search" placeholder="Enter City And Press Enter" style="border:2px solid white;width:320px;font-size:1.6rem;" />
+
+                <img class="mr-20 size-12 cursor-pointer grayscale-100 hover:grayscale-0 active:grayscale-0" id="clickbtn" src="Main_Icons/search1.png" />
+            </div>
+            <div id="date" class="text-2xl"></div>
+            <div id="lati" class="text-2xl max-[361px]:text-xl"></div>
+
+            <!--action="/action_page.php"-->
+            <!--//section for local storage of recent searches.Refresh the page to check the recently searched locations-->
+            <form>
+                <label for="history">Choose a Recent Location:</label>
+                <select name="history" id="history" style="background-color:#1C1E1D">
+                    <option value="history">History</option>
+
+                </select>
+                <br><br>
+            </form>
+        </div>
+
+
+        <!--Weather Details Section-->
+        <!--Media queries for Ipad Mini,Iphone Se,Desktop were added for classes wherever required-->
+        <div id="entire" class="border-2 h-[496px] w-[490.95px] rounded-2xl border-solid bg-[url(backgrounds/luca-bravo-a_hPPrncGlQ-unsplash.jpg)] bg-cover font-[raleway] text-white max-[477px]:h-[550px]">
+            <div id="location-details" class="hidden flex-row flex-wrap items-center justify-center">
+                <div class="w-fit">
+                    <img src="Main_Icons/map.png" />
+                </div>
+
+                <div id="city" class="text-2xl">
+
+
+                </div>
+
+            </div>
+            <br />
+            <br />
+
+            <!--Weather Props Section-->
+            <div class="hidden flex-row flex-wrap items-center justify-center gap-0.5 max-[479px]:text-2xl" id="weatherprops">
+                <div class="flex flex-row items-center justify-center">
+                    <img style="height:50px" id="weathericon" src="Main_Icons/cloud-sky_3222807.png" />
+                    <p id="weather" class="text-1xl"></p>
+
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <img src="Main_Icons/humidity.png" style="height:50px" />
+                    <p id="humidity" class="text-1xl"></p>
+
+                </div>
+                <div class="ml-2.5 flex flex-row items-center justify-center gap-1">
+                    <img src="Main_Icons/wind.png" style="height:40px" />
+                    <p id="windspeed" class="text-1xl"></p>
+
+                </div>
+            </div>
+
+            <br />
+
+            <!--Temperature Display Section-->
+            <div id="weather-status" class="hidden flex-col flex-wrap gap-5">
+                <div class="flex flex-col items-center justify-center">
+                    <img style="height:60px" src="Main_Icons/temperature.png" />
+                    <p id="temp" class="text-3xl"></p>
+
+                </div>
+
+                <div class="mr-8 flex flex-col items-center justify-center">
+                    <img style="height:60px" src="Main_Icons/temperatureminmax.png" />
+                    <p id="min-max" class="text-3xl"></p>
+
+                </div>
+            </div>
+            <br />
+
+            <!--section to Convert Temperature from Celcius to Fahrenheit and Vice versa -->
+            <div id="buttons" class="hidden flex-row items-center justify-center gap-12">
+
+                <img src="Main_Icons/fahrenheit_7334412.png" id="fara" class="size-[70px] cursor-pointer" />
+                <img src="Main_Icons/celcius_11787469.png" id="celc" class="size-[70px] cursor-pointer">
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    
+    <section id="textdisplay">
+        <h1 class="text-center text-3xl text-white">Weather For Next 5 Days</h1>
+    </section>
+    <br />
+    <br />
+
+
+    <!--class="dailyforecast"-->
+    <!--Section for future weather forecast-->
+
+    <section id="dailyforecast" class="flex flex-row flex-wrap items-center justify-center gap-4 text-2xl font-[raleway] text-white">
+        
+    </section>
+    <br />
+    <br />
+
+    <!--Javascript File-->
+    <script src="Script1.js"></script>
+
+
+</body>
+</html>

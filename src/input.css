@@ -1,0 +1,192 @@
+﻿@import "tailwindcss";
+
+/*body {*/
+    /*background-color:#cee0f6;*/
+    /*background-image: url(maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}*/
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+/*.weathericon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    transition: all 400ms ease-in-out;
+    padding: 0px;
+    animation: iconanim 1s ease-in-out infinite alternate-reverse;
+}*/
+
+
+.mainarea {
+    border: 5px solid white;
+    margin-right: 200px;
+    margin-top: -100px;
+    margin-left: 200px;
+    background-color: #cee0f6;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*#city-search {
+    width: 500px;
+    height: 50px;
+    margin-left: 320px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+}*/
+
+/*#location-details {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    background-color: white;
+    margin-left: 110px;
+    border: 5px solid black;
+    border-radius: 10px;
+    color: black;
+    opacity: 0.8;
+}
+
+#weather-status {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    text-align: center;
+    background-color: white;
+    border: 5px solid black;
+    margin-left: 300px;
+    border-radius: 10px;
+    color: black;
+    opacity: 0.8;
+}
+
+
+
+#celc {
+    width: 50px;
+    height: 50px;
+}
+
+#fara {
+    width: 50px;
+    height: 50px;
+}*/
+
+
+
+@keyframes iconanim {
+
+    0% {
+        filter: blur(3px) grayscale(100%)
+    }
+
+    100% {
+        filter: blur(0px) grayscale(0%)
+    }
+}
+
+/*#buttons {
+    display: inline-block;
+    margin-left: 510px;
+}*/
+
+/*h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+}
+
+#entire {
+    display: inline-flex;
+}
+
+#lati {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#anim {
+    height: 100px;
+    width: 100px;
+    animation: sunanim 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes sunanim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#dailyforecast {
+    display: none;
+    padding: 100px;
+    background-color: #cee0f6;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 0em;
+    font-weight: 900;
+    border: 5px solid white;
+}
+
+#windspeed {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+#textdisplay {
+    padding: 20px;
+    background-color: #cee0f6;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border: 5px solid white;
+}
+
+.w-icon {
+    animation: animic 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes animic {
+
+    0% {
+        filter: grayscale(0%) hue-rotate(0deg) brightness(100%);
+    }
+
+    100% {
+        filter: grayscale(100%) hue-rotate(90deg) brightness(180%);
+    }
+}*/
+
+
+
+
+/*@theme {
+    --breakpoint-xs: 30rem;
+    --breakpoint-2xl: 100rem;
+    --breakpoint-3xl: 120rem;
+}*/
