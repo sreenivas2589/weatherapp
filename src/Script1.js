@@ -70,10 +70,6 @@ locationbtn.addEventListener('click', () => {
 //you can also use enter to get the weather data of location and or you can also click on the search button to fetch weather data 
 
 SearchInputBox.addEventListener('keypress', (event) => {
-    //if (SearchInputBox.value === "" || event.target.value == null) {
-    //    alert("Please enter a city name")
-    //}
-
 
     if(event.keyCode == 13) {
         //console.log(SearchInputBox.value)
@@ -86,8 +82,6 @@ SearchInputBox.addEventListener('keypress', (event) => {
         document.getElementById('weatherprops').classList.replace('hidden', 'flex')
         document.getElementById('weather-status').classList.replace('hidden', 'flex')
         document.getElementById('buttons').classList.replace('hidden', 'flex')
-
-        /*document.getElementById('city-search').value = ""*/
 
         
     }
@@ -132,7 +126,6 @@ function futuredate(lat,lon) {
         .then(response => {
             if (response.ok) {
                 console.log(response)
-                /*console.log(response.json())*/
                 return response.json()
             }
             else {
@@ -178,9 +171,7 @@ function getfuturedetails(futureweather) {
         if ((index+1) % 8 == 0 )  {
 
             let city = document.createElement('p')
-            //console.log(ele)
-            //console.log(index)
-            
+
             city.innerHTML = `${cityname}`
 
             let tempele = document.createElement('p')
